@@ -1,0 +1,24 @@
+<html>
+    <title>
+        ML APP
+    </title>
+    <body>
+        <form action = "{{url_for('predict')}}" method='post'>
+            <label>Experience: </label><input type = "text" name = "experience" /><br>
+            <div><br></div>
+            <label>Test Score: </label><input type = "text" name = "test_score" /><br>
+            <div><br></div>
+            <label>Interview Score: </label><input type = "text" name = "interview_score" /><br>
+            <div><br></div>
+            <button type = "submit">Predict</button>
+
+        </form>
+
+        {{ prediction }}
+
+
+    </body>
+
+
+</html>
+
